@@ -29,7 +29,7 @@ public class ItemSpectralBow extends ItemBow implements IConjuredItem {
 
 	public ItemSpectralBow(){
 		super();
-		setMaxDamage(1200);
+		setMaxDamage(4800);
 		setNoRepair();
 		setCreativeTab(null);
 		this.addPropertyOverride(new ResourceLocation("pull"), new IItemPropertyGetter(){

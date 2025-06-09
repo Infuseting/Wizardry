@@ -618,8 +618,8 @@ public final class WizardryItems {
 		registerItem(registry, "advanced_healing_wand", 			new ItemWand(Tier.ADVANCED, Element.HEALING));
 		registerItem(registry, "master_healing_wand", 			new ItemWand(Tier.MASTER, Element.HEALING));
 
-		registerItem(registry, "spectral_sword", 					new ItemSpectralSword(ToolMaterial.IRON));
-		registerItem(registry, "spectral_pickaxe", 				new ItemSpectralPickaxe(ToolMaterial.IRON));
+		registerItem(registry, "spectral_sword", 					new ItemSpectralSword(ToolMaterial.DIAMOND));
+		registerItem(registry, "spectral_pickaxe", 				new ItemSpectralPickaxe(ToolMaterial.DIAMOND));
 		registerItem(registry, "spectral_bow", 					new ItemSpectralBow());
 
 		registerItem(registry, "blank_scroll",					new ItemBlankScroll());
@@ -816,10 +816,10 @@ public final class WizardryItems {
 		registerItem(registry, "warlock_leggings_healing", 		new ItemWizardArmour(ArmourClass.WARLOCK, EntityEquipmentSlot.LEGS, Element.HEALING));
 		registerItem(registry, "warlock_boots_healing", 			new ItemWizardArmour(ArmourClass.WARLOCK, EntityEquipmentSlot.FEET, Element.HEALING));
 
-		registerItem(registry, "spectral_helmet", 				new ItemSpectralArmour(ArmorMaterial.IRON, 1, EntityEquipmentSlot.HEAD));
-		registerItem(registry, "spectral_chestplate", 			new ItemSpectralArmour(ArmorMaterial.IRON, 1, EntityEquipmentSlot.CHEST));
-		registerItem(registry, "spectral_leggings", 				new ItemSpectralArmour(ArmorMaterial.IRON, 1, EntityEquipmentSlot.LEGS));
-		registerItem(registry, "spectral_boots", 					new ItemSpectralArmour(ArmorMaterial.IRON, 1, EntityEquipmentSlot.FEET));
+		registerItem(registry, "spectral_helmet", 				new ItemSpectralArmour(ArmorMaterial.DIAMOND, 1, EntityEquipmentSlot.HEAD));
+		registerItem(registry, "spectral_chestplate", 			new ItemSpectralArmour(ArmorMaterial.DIAMOND, 1, EntityEquipmentSlot.CHEST));
+		registerItem(registry, "spectral_leggings", 				new ItemSpectralArmour(ArmorMaterial.DIAMOND, 1, EntityEquipmentSlot.LEGS));
+		registerItem(registry, "spectral_boots", 					new ItemSpectralArmour(ArmorMaterial.DIAMOND, 1, EntityEquipmentSlot.FEET));
 
 		registerItem(registry, "lightning_hammer", 				new ItemLightningHammer());
 		registerItem(registry, "flamecatcher", 					new ItemFlamecatcher());

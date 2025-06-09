@@ -23,7 +23,7 @@ public class ItemSpectralSword extends ItemSword implements IConjuredItem {
 
 	public ItemSpectralSword(ToolMaterial material){
 		super(material);
-		setMaxDamage(1200);
+		setMaxDamage(4800);
 		setNoRepair();
 		setCreativeTab(null);
 		addAnimationPropertyOverrides();

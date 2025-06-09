@@ -17,7 +17,7 @@ public class ItemSpectralArmour extends ItemArmor implements IConjuredItem {
 	public ItemSpectralArmour(ArmorMaterial material, int renderIndex, EntityEquipmentSlot armourType){
 		super(material, renderIndex, armourType);
 		setCreativeTab(null);
-		setMaxDamage(1200);
+		setMaxDamage(4800);
 	}
 
 	@Override

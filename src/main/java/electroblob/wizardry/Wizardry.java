@@ -125,45 +125,53 @@ public class Wizardry {
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event){
-
+		System.out.println("1");
 		logger = event.getModLog();
-
+		System.out.println("2");
 		configDirectory = new File(event.getModConfigurationDirectory(), Wizardry.MODID);
 		settings.initConfig(event);
-
+		System.out.println("3");
 		Calendar calendar = Calendar.getInstance();
 		tisTheSeason = calendar.get(Calendar.MONTH) + 1 == 12 && calendar.get(Calendar.DAY_OF_MONTH) >= 24
 				&& calendar.get(Calendar.DAY_OF_MONTH) <= 26;
-
+		System.out.println("4");
 		// Capabilities
 		WizardData.register();
+		System.out.println("5");
 		DispenserCastingData.register();
-
+		System.out.println("6");
 		// Register things that don't have registries
 		WizardryBlocks.registerTileEntities();
+		System.out.println("7");
 		WizardryLoot.register();
+		System.out.println("8");
 		WizardryAdvancementTriggers.register();
+		System.out.println("9");
 		Forfeit.register();
+		System.out.println("10");
 		BlockBookshelf.registerStandardBookModelTextures();
-
+		System.out.println("11");
 		// Client-side stuff (via proxies)
 		proxy.registerRenderers();
+		System.out.println("12");
 		proxy.registerKeyBindings();
+		System.out.println("13");
 
 		// Commented out for 4.2.3 to get rid of the sound bug, reinstate once a fix is found.
 		WizardrySounds.SPELLS = SoundCategory.PLAYERS;//CustomSoundCategory.add(Wizardry.MODID + "_spells");
-
+		System.out.println("14");
 		WizardryBaublesIntegration.init();
+		System.out.println("15");
 		WizardryAntiqueAtlasIntegration.init();
-
+		System.out.println("16");
 	}
 
 	@EventHandler
 	public void init(FMLInitializationEvent event){
 		proxy.registerResourceReloadListeners();
-
+	    System.out.println("1");
 		settings.initConfigExtras();
-
+		System.out.println("2");
 		// World generators
 		// Weight is a misnomer, it's actually the priority (where lower numbers get generated first)
 		// Literally nothing on typical 'weight' values here, there isn't even an upper limit
@@ -176,13 +184,15 @@ public class Wizardry {
 		GameRegistry.registerWorldGenerator(new WorldGenShrine(), 20);
 		GameRegistry.registerWorldGenerator(new WorldGenLibraryRuins(), 20);
 		GameRegistry.registerWorldGenerator(new WorldGenUndergroundLibraryRuins(), 20);
+		System.out.println("3");
 
 		// This is for the config change and missing mappings events
 		MinecraftForge.EVENT_BUS.register(instance); // Since there's already an instance we might as well use it
-
+		System.out.println("4");
 		NetworkRegistry.INSTANCE.registerGuiHandler(this, new WizardryGuiHandler());
-		WizardryPacketHandler.initPackets();
-
+		System.out.println("5");
+		WizardryPacketHandler.initPackets(MODID);
+		System.out.println("6");
 		// Post-registry extras
 		BlockBookshelf.compileBookModelTextures();
 		ContainerBookshelf.initDefaultBookItems();

@@ -11,8 +11,9 @@ public class WizardryPacketHandler {
 
 	public static SimpleNetworkWrapper net;
 
-	public static void initPackets(){
-		net = NetworkRegistry.INSTANCE.newSimpleChannel(Wizardry.MODID.toUpperCase());
+	public static void initPackets(String MODID){
+		net = NetworkRegistry.INSTANCE.newSimpleChannel(MODID.toLowerCase());
+
 		registerMessage(PacketControlInput.class, 			PacketControlInput.Message.class);
 		registerMessage(PacketCastSpell.class, 				PacketCastSpell.Message.class);
 		registerMessage(PacketTransportation.class, 		PacketTransportation.Message.class);

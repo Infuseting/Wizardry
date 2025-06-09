@@ -21,7 +21,7 @@ public class ItemSpectralPickaxe extends ItemPickaxe implements IConjuredItem {
 
 	public ItemSpectralPickaxe(ToolMaterial material){
 		super(material);
-		setMaxDamage(1200);
+		setMaxDamage(4800);
 		setNoRepair();
 		setCreativeTab(null);
 		addAnimationPropertyOverrides();

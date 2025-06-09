@@ -14,14 +14,14 @@ public enum Element implements IStringSerializable {
 
 	/** The 'default' element, with {@link electroblob.wizardry.registry.Spells#magic_missile magic missile} being its
 	 * only spell. */
-	MAGIC(new Style().setColor(TextFormatting.GRAY), "magic"),
-	FIRE(new Style().setColor(TextFormatting.DARK_RED), "fire"),
-	ICE(new Style().setColor(TextFormatting.AQUA), "ice"),
-	LIGHTNING(new Style().setColor(TextFormatting.DARK_AQUA), "lightning"),
-	NECROMANCY(new Style().setColor(TextFormatting.DARK_PURPLE), "necromancy"),
-	EARTH(new Style().setColor(TextFormatting.DARK_GREEN), "earth"),
-	SORCERY(new Style().setColor(TextFormatting.GREEN), "sorcery"),
-	HEALING(new Style().setColor(TextFormatting.YELLOW), "healing");
+	MAGIC((new Style()).setColor(TextFormatting.GRAY), "magic"),
+	FIRE((new Style()).setColor(TextFormatting.DARK_RED), "fire"),
+	ICE((new Style()).setColor(TextFormatting.AQUA), "ice"),
+	LIGHTNING((new Style()).setColor(TextFormatting.DARK_AQUA), "lightning"),
+	NECROMANCY((new Style()).setColor(TextFormatting.DARK_PURPLE), "necromancy"),
+	EARTH((new Style()).setColor(TextFormatting.DARK_GREEN), "earth"),
+	SORCERY((new Style()).setColor(TextFormatting.GREEN), "sorcery"),
+	HEALING((new Style()).setColor(TextFormatting.YELLOW), "healing");
 
 	/** Display colour for this element */
 	private final Style colour;
