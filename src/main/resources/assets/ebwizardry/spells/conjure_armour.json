@@ -17,6 +17,6 @@
   "chargeup": 10,
   "cooldown": 50,
   "base_properties": {
-    "item_lifetime": 1800
+    "item_lifetime": 4800
   }
 }
